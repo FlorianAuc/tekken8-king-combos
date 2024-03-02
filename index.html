@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galerie de Combos</title>
+    <!-- Inclure Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .tab-button.active {
+        background-color: #4a5568;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white p-8">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-8">
+        🐯 Galerie de Combos de King 🐯
+      </h1>
+
+      <!-- Onglets -->
+      <div class="flex mb-4">
+        <button
+          onclick="toggleTab('all')"
+          id="allBtn"
+          class="tab-button bg-gray-800 text-white px-4 py-2 mr-2"
+        >
+          All
+        </button>
+        <button
+          onclick="toggleTab('easy')"
+          id="easyBtn"
+          class="tab-button bg-gray-800 text-white px-4 py-2 mr-2"
+        >
+          Easy
+        </button>
+        <button
+          onclick="toggleTab('medium')"
+          id="mediumBtn"
+          class="tab-button bg-gray-800 text-white px-4 py-2 mr-2"
+        >
+          Medium
+        </button>
+        <button
+          onclick="toggleTab('hard')"
+          id="hardBtn"
+          class="tab-button bg-gray-800 text-white px-4 py-2"
+        >
+          Hard
+        </button>
+      </div>
+
+      <!-- Contenu des onglets -->
+      <div id="all" class="tab-content">
+        <!-- Tous les combos de 1 à 9 -->
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Répéter pour chaque image de combo de 1 à 9 -->
+          <!-- Image de combo 1 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi1.png" alt="Combo 1" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 1</div>
+            </div>
+          </div>
+
+          <!-- Répétez pour chaque image de combo de 1 à 9 -->
+          <!-- Image de combo 2 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi2.png" alt="Combo 2" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 2</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 3 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi3.png" alt="Combo 3" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 3</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 4 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi4.png" alt="Combo 4" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 4</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 5 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi5.png" alt="Combo 5" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 5</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 6 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi6.png" alt="Combo 6" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 6</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 7 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi7.png" alt="Combo 7" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 7</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 8 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi8.png" alt="Combo 8" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 8</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 9 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi9.png" alt="Combo 9" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 9</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenu des autres onglets -->
+
+      <div id="easy" class="tab-content hidden">
+        <!-- Images de difficulté Easy -->
+        <div class="grid grid-cols-3 gap-4">
+          <!-- Image de combo 1 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi1.png" alt="Combo 1" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 1</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 2 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi2.png" alt="Combo 2" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 2</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 3 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi3.png" alt="Combo 3" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 3</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 4 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi4.png" alt="Combo 4" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 4</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 5 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi5.png" alt="Combo 5" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 5</div>
+            </div>
+          </div>
+
+          <!-- Image de combo 6 -->
+          <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+            <img class="w-full" src="defi6.png" alt="Combo 6" />
+            <div class="px-6 py-4">
+              <div class="font-bold text-xl mb-2">Combo 6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="medium" class="tab-content hidden">
+        <!-- Image de combo 7 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+          <img class="w-full" src="defi7.png" alt="Combo 7" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Combo 7</div>
+          </div>
+        </div>
+      </div>
+
+      <div id="hard" class="tab-content hidden">
+        <!-- Image de combo 8 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+          <img class="w-full" src="defi8.png" alt="Combo 8" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Combo 8</div>
+          </div>
+        </div>
+        <!-- Image de combo 9 -->
+        <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
+          <img class="w-full" src="defi9.png" alt="Combo 9" />
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Combo 9</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const toggleTab = (tabName) => {
+        let tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach((tab) => {
+          if (tab.id === tabName) {
+            tab.classList.remove("hidden");
+          } else {
+            tab.classList.add("hidden");
+          }
+        });
+
+        // Mettre à jour le style du bouton actif
+        let buttons = document.querySelectorAll(".tab-button");
+        buttons.forEach((button) => {
+          if (button.id === tabName + "Btn") {
+            button.classList.add("active");
+          } else {
+            button.classList.remove("active");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
