@@ -61,8 +61,9 @@
       <!-- Contenu des onglets -->
       <div id="all" class="tab-content">
         <!-- Tous les combos de 1 à 9 -->
-        <div class="grid grid-cols-3 gap-4">
-          <!-- Répéter pour chaque image de combo de 1 à 9 -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center"
+        >
           <!-- Image de combo 1 -->
           <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
             <img class="w-full" src="images/defi1.png" alt="Combo 1" />
@@ -71,7 +72,6 @@
             </div>
           </div>
 
-          <!-- Répétez pour chaque image de combo de 1 à 9 -->
           <!-- Image de combo 2 -->
           <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
             <img class="w-full" src="images/defi2.png" alt="Combo 2" />
@@ -142,7 +142,9 @@
 
       <div id="easy" class="tab-content hidden">
         <!-- Images de difficulté Easy -->
-        <div class="grid grid-cols-3 gap-4">
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 justify-center"
+        >
           <!-- Image de combo 1 -->
           <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
             <img class="w-full" src="images/defi1.png" alt="Combo 1" />
@@ -193,6 +195,7 @@
         </div>
       </div>
 
+      <!-- Images de difficulté Medium -->
       <div id="medium" class="tab-content hidden">
         <!-- Image de combo 7 -->
         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
@@ -203,6 +206,7 @@
         </div>
       </div>
 
+      <!-- Images de difficulté Hard -->
       <div id="hard" class="tab-content hidden">
         <!-- Image de combo 8 -->
         <div class="max-w-sm rounded overflow-hidden shadow-lg bg-gray-800">
